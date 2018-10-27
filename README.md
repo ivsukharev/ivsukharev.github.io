@@ -15,7 +15,7 @@
 Урок №6: [Шапка сайта с навигацией](https://codepen.io/tsar_sukhar/pen/GBLQqy) ------ [Блочный элемент по середине](https://codepen.io/tsar_sukhar/pen/ejoVjJ)
 
 
-Урок №7: [Вёрстка первого макета](lesson7.github.io)
+Урок №7: [Вёрстка первого макета](https://ivsukharev.github.io/lesson_7)
 
 
 Урок №8: [Подключение библиотеки bootstrap для быстрой верстки](адрес "Описание")

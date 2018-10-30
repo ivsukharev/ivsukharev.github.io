@@ -1,0 +1,9 @@
+*{
+	box-sizing: border-box;
+}
+.row{
+	-ms-align-items: ;
+	align-items: center;
+	text-align: center;
+	
+}

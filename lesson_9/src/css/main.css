@@ -1,0 +1,59 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: Tahoma, sans-serif;
+}
+h1 span{
+	display: block;
+}
+.header{
+	font-size: 20px;
+	margin-top: 20px;
+}
+.rowse{
+	margin-top: 30px;
+}
+.form{
+	border: 3px solid #3c3cdd;
+	padding: 35px 25px;
+	padding-bottom: 12px;
+}
+.form p{
+	font-size: 18px;
+	font-weight: 700;
+}
+.form-control{
+	margin-bottom: 10px;
+	margin: 14px auto;
+}
+button{
+	background-color: #3c3cdd;
+	margin-bottom: 25px;
+	color: white;
+}
+.section2{
+	margin-top: 30px;	
+}
+.par{
+	font-size: 20px;
+	font-weight: 700;
+}
+.feature-box{
+	margin-top: 15px;
+}
+.ftr{
+	margin-top: 10px;
+}
+.col-lg-4.offset-lg-4{
+	padding-top: 20px;
+}
+.section3{
+	margin-top: 60px;
+}
+.col-lg-12.text-center{
+	margin-bottom: 20px;
+}
+.image{
+	margin-bottom: 60px;
+}

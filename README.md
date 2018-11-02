@@ -33,4 +33,4 @@
 
 Урок №12: [](адрес "Описание")
 
-Урок №13: [Pixel perfect](https://ivsukharev.github.io/lesson_13)
+Урок №13: [Perfect pixel](https://ivsukharev.github.io/lesson_13)

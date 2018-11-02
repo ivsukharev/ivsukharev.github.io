@@ -32,3 +32,5 @@
 [CSS сниппет и скрин теста по Emmet](https://ivsukharev.github.io/lesson_11)
 
 Урок №12: [](адрес "Описание")
+
+Урок №13: [Pixel perfect](https://ivsukharev.github.io/lesson_13)

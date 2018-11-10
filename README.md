@@ -35,4 +35,6 @@
 
 Урок №13: [Perfect pixel](https://ivsukharev.github.io/lesson_13/index.html)
 
-Урок №14: [Шапка сайта](https://ivsukharev.github.io/lesson_14/index.html)
+Практика №1: [Шапка сайта](https://ivsukharev.github.io/lesson_14/index.html)
+
+Урок №14: [Подключение шрифтов](https://ivsukharev.github.io/lesson_15)

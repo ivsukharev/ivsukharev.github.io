@@ -38,3 +38,6 @@
 Практика №1: [Шапка сайта](https://ivsukharev.github.io/lesson_14/index.html)
 
 Урок №14: [Подключение шрифтов](https://ivsukharev.github.io/lesson_15)
+
+Практика №2: [Главный экран сайта](https://ivsukharev.github.io/lesson_16)
+

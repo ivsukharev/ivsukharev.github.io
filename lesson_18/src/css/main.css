@@ -1,0 +1,229 @@
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url('../fonts/ProximaNova-Regular.eot');
+  src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Regular.woff2') format('woff2'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url('../fonts/ProximaNova-Bold.eot');
+  src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Bold.woff2') format('woff2'), url('../fonts/ProximaNova-Bold.woff') format('woff'), url('../fonts/ProximaNova-Bold.ttf') format('truetype'), url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+/* Colors */
+/* Basic settings */
+html {
+  font-size: 10px;
+}
+button:focus,
+input:focus,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+}
+/* Body */
+body {
+  font-family: 'Proxima Nova Regular';
+}
+/* Header */
+.header {
+  padding-top: 2rem;
+}
+/* Phone */
+a.phone {
+  font-size: 1.8rem;
+  color: #292929;
+  font-weight: 700;
+  display: inline-block;
+  height: 7rem;
+  line-height: 7rem;
+}
+/* Button in header */
+.button {
+  font-family: 'Proxima Nova Bold';
+  text-transform: uppercase;
+  background-color: #f6ae00;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 1.5rem 3rem;
+  font-weight: 600;
+  border: none;
+  font-size: 1.2rem;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #ffb911;
+}
+.wrap {
+  display: table;
+  width: 100%;
+  height: 7rem;
+}
+.wrap-block {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+}
+/* Main tittle */
+h1 {
+  font-family: 'Proxima Nova Bold';
+  margin-bottom: 4rem;
+  line-height: 5.5rem;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+/* Subtittle */
+.second-subtittle {
+  font-size: 2rem;
+  font-family: 'Proxima Nova Regular';
+  font-weight: 450;
+}
+/* Green box */
+.green-box {
+  margin-top: 4.5rem;
+  height: 10rem;
+  width: 22rem;
+  background-color: #45b613;
+  color: #ffffff;
+  font-family: 'Proxima Nova Regular';
+  font-size: 2rem;
+  text-align: center;
+  padding: 1.5rem 2.5rem;
+}
+.green-box-inside {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.onfact {
+  margin-top: 3.5rem;
+  font-family: 'Proxima Nova Bold';
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+/* Main form */
+.main-form {
+  background-color: #ffffff;
+  padding: 5rem 5rem;
+  text-align: center;
+}
+.main-form p {
+  font-size: 1.7rem;
+  margin-bottom: 4rem;
+  font-family: 'Proxima Nova Regular';
+}
+.main-form p strong {
+  font-family: 'Proxima Nova Bold';
+  font-size: 1.8rem;
+}
+.main-form input {
+  width: 100%;
+  border: 0.1rem solid #dddddd;
+  border-radius: 0.4rem;
+  display: block;
+  margin: 3rem 0rem;
+  padding: 1.5rem;
+}
+.main-form label {
+  font-family: 'Proxima Nova Regular';
+  font-size: 1.3rem;
+  display: inline-block;
+  position: absolute;
+  background-color: #ffffff;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 0.5rem;
+}
+.main-form .button {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: -0.5rem;
+  width: 100%;
+}
+p.second-p {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+.main {
+  background: url(../img/main.png) center center no-repeat;
+  background: cover;
+  margin-top: -1rem;
+  padding-bottom: 10rem;
+  background-position: top;
+}
+.main-header {
+  margin-top: 10rem;
+}
+/* Media */
+@media (max-width: 1199px) {
+  .main {
+    padding-bottom: 1.5rem;
+  }
+  .wrap-block {
+    text-align: right;
+  }
+  .phone {
+    text-align: right;
+  }
+}
+@media (max-width: 991px) {
+  .main {
+    background-position: top right;
+    -webkit-background-size: 500%;
+    background-size: 500%;
+    padding-bottom: 3rem;
+  }
+  .phone {
+    text-align: center;
+  }
+  .main-tittle {
+    text-align: center;
+  }
+  .green-box {
+    transform: translateX(107%);
+  }
+  .logo {
+    text-align: center;
+  }
+  .main-form {
+    margin-top: 6rem;
+  }
+  .wrap-block {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .green-box {
+    transform: translateX(67%);
+  }
+  .main {
+    background-position: top left;
+    -webkit-background-size: 580%;
+    background-size: 580%;
+  }
+}
+@media (max-width: 767px) {
+  .wrap-block {
+    text-align: center;
+  }
+  .main-header {
+    margin-top: 6rem;
+  }
+  .main {
+    -webkit-background-size: 600%;
+    background-size: 600%;
+  }
+}
+@media (max-width: 575px) {
+  .header {
+    align-items: center;
+    text-align: center;
+  }
+  .main {
+    margin-left: .5rem;
+  }
+}

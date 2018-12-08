@@ -42,3 +42,5 @@
 Практика №2: [Главный экран сайта](https://ivsukharev.github.io/lesson_16)
 
 Урок №15: [Подключение шрифтов](https://ivsukharev.github.io/lesson_17)
+
+Практика №3: [Адаптив](https://ivsukharev.github.io/lesson_16)

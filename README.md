@@ -43,4 +43,4 @@
 
 Урок №15: [Подключение шрифтов](https://ivsukharev.github.io/lesson_17)
 
-Практика №3: [Адаптив](https://ivsukharev.github.io/lesson_18)
+Практика №3: [Адаптив](https://ivsukharev.github.io/lesson_16)

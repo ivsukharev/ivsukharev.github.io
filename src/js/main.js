@@ -127,6 +127,13 @@ function autoplay(n=9000) {
      menu.className = "burger-menu";
   }
 }
+/*button.onmouseup = function(){
+   if(menu.className === "burger-menu"){
+    menu.className += " burger-menu-active";
+  }else{
+     menu.className = "burger-menu";
+  }
+}*/
 
 overlay.onclick = function(){
     menu.classList.remove('burger-menu-active');

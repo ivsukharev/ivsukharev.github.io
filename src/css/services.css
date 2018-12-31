@@ -101,3 +101,14 @@ body {
 .footer .rights-reserved {
   margin: 0;
 }
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .methods {
+    margin-bottom: 4rem;
+  }
+  .main-services-text-block {
+    margin-top: 34vh;
+  }
+  #main-block {
+    height: 110vh;
+  }
+}

@@ -13,10 +13,14 @@ var currentSlide = 0;
 
 function nextSlide() {
  goToSlide(currentSlide+1);
+  /*slides[currentSlide].style.animation = 'movenext';
+  slides[currentSlide].style.animationDuration = '.6s';*/
 }
 
 function previousSlide() {
  goToSlide(currentSlide-1);
+ /* slides[currentSlide].style.animation = 'moveprev';
+  slides[currentSlide].style.animationDuration = '.6s';*/
 }
 
 dot1.onclick = function(){
@@ -35,7 +39,7 @@ dot1.onclick = function(){
 
 dot2.onclick = function(){
   slides[currentSlide].classList.remove('slide-showing');
-      slides[currentSlide].style.animation = 'none';
+  slides[currentSlide].style.animation = 'none';
   dot1.classList.remove('dot-active');
   dot3.classList.remove('dot-active');
   dot2.classList.add('dot-active');
@@ -78,7 +82,6 @@ function goToSlide(n) {
        dot2.classList.add('dot-active');
     } else if(currentSlide == 2){
        dot3.classList.add('dot-active');
-
     }
 /*    setInterval(nextSlide,9000);*/
    
@@ -108,15 +111,21 @@ function autoplay(n=9000) {
   let menu = document.getElementById('phone-menu');
   let button = document.getElementById('burger-button');
   let overlay = document.getElementById('overlay');
-  let buttonClick = 1;
+  let btnClick = 1;
 
   button.onclick = function(){
-  if (buttonClick%2 == 1){
+/*  if (btnClick%2 == 1){
     menu.classList.add('burger-menu-active');
   } else{
     menu.classList.remove('burger-menu-active');
   }
-  buttonClick++;
+  btnClick++;
+  console.log(btnClick);*/
+  if(menu.className === "burger-menu"){
+    menu.className += " burger-menu-active";
+  }else{
+     menu.className = "burger-menu";
+  }
 }
 
 overlay.onclick = function(){

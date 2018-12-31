@@ -45,4 +45,4 @@
 
 Практика №3: [Адаптив](https://ivsukharev.github.io/lesson_18)
 
-[Red](https://ivsukharev.github.io/ForRed)
+[Red](https://ivsukharev.github.io/src)

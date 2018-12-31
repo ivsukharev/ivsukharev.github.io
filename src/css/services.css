@@ -1,0 +1,103 @@
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: 'Century Gothic', sans-serif;
+}
+h2 {
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 1.6rem;
+}
+body {
+  font-family: 'Tw Cen MT', sans-serif;
+  color: #1f1f1f;
+}
+#main-block {
+  background: url('../img/services-background.jpg') center no-repeat;
+  background-size: cover;
+}
+.main-services-text-block {
+  margin-top: 30vh;
+  text-align: center;
+}
+.main-services-text-block h1 {
+  margin-bottom: 1rem;
+}
+.main-services-text-block p {
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
+}
+.main-redline-services {
+  position: absolute;
+  width: 10rem;
+  left: 50%;
+  margin-left: -5rem;
+  margin-top: -2rem;
+  height: 0.16rem;
+  background-color: #c82f32;
+}
+.features {
+  margin-top: 7rem;
+  padding-top: 5rem;
+  background: url('../img/background.png') center no-repeat;
+  height: 100vh;
+}
+.features-part {
+  display: block;
+  outline: none;
+}
+.features-slider .features-block {
+  text-align: center;
+  margin-top: 3rem;
+  outline: none;
+}
+.features-slider .features-block img {
+  margin: 0 auto;
+}
+.features-slider .features-block p {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #767676;
+}
+.consulting {
+  background: url('../img/business_consulting&research-background.png') center no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 5.4rem;
+  padding-bottom: 3rem;
+}
+.consulting h1 {
+  margin-bottom: 7rem;
+}
+.consulting p {
+  font-size: 1.6rem;
+}
+.consulting-list {
+  margin-top: 1.4rem;
+  margin-bottom: 2rem;
+}
+.consulting h2 {
+  margin-top: 3rem;
+}
+.consulting .methods,
+.consulting .issues {
+  display: inline-block;
+  height: 22rem;
+  width: 100%;
+  border: .1rem solid #fff;
+}
+.consulting .methods h2,
+.consulting .issues h2 {
+  font-weight: 800;
+  margin-top: 0;
+  background-color: #fff;
+  padding: 1rem 0;
+}
+.footer {
+  margin: 0;
+  width: 100%;
+}
+.footer .rights-reserved {
+  margin: 0;
+}

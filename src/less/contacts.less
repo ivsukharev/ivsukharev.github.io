@@ -1,0 +1,75 @@
+@main-color: #c82f32;
+@text: #1f1f1f;
+@dots: #767676;
+#main-block{
+	background: url('../img/contacts.png') center no-repeat;
+	background-size: cover;
+		height: 200vh;
+}
+.contacts{
+	padding-top: 8rem;
+	&-text{
+		margin-top: 8rem;
+		font-weight: 800;
+		margin-bottom: 10rem;
+	}
+	h1{
+		margin-bottom: 7rem;
+	}
+}
+input{
+	width: 100%;
+	height: 3rem;
+	margin-bottom: 6rem;
+	border-radius: .5rem;
+	border: none;
+	padding-left: 1.2rem;
+	font-size: 1.4rem;
+	border-bottom: .1rem solid #cfcfcf;
+	&:focus{
+		outline: none;
+		border-bottom: .1rem solid @main-color;
+		transition: all .5s;
+			} 
+}
+.btn-contacts{
+		width: 100%;
+		height: 3rem;
+		font-size: 1.4rem;
+		color: @main-color;
+		border: .1rem solid @main-color;
+		background-color: transparent;
+		&:hover{
+			color: #fff;
+			border: none;
+			background-color: @main-color;
+			transition: all .5s;
+		}
+}
+.form-group{
+	position: relative;
+	label{
+		position: absolute;
+		top: .4rem;
+		left: 1.2rem;
+		font-size: 1.4rem;
+		color: @dots;
+		transition: .5s;
+	}
+}
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label{
+	top: -1.4rem;
+	font-size: 1rem;
+	color: #c3c3c3;
+}
+.input-message{
+	height: 6rem;
+}
+.footer{
+	margin: 0;
+	width: 100%;
+	.rights-reserved{
+		margin: 0;
+	}
+}

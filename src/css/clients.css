@@ -1,0 +1,97 @@
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: 'Century Gothic', sans-serif;
+}
+h2 {
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 1.6rem;
+}
+body {
+  font-family: 'Tw Cen MT', sans-serif;
+  color: #1f1f1f;
+}
+.main-block-clients {
+  background: url('../img/clients-main-background.png') center no-repeat;
+  background-size: cover;
+}
+.text-block-clients {
+  text-align: center;
+}
+.text-block-clients p {
+  font-size: 1.6rem;
+  letter-spacing: .1rem;
+  margin-top: 35%;
+  font-family: 'Century Gothic', sans-serif;
+  color: #fff;
+}
+.note {
+  height: 100vh;
+  margin-top: 4rem;
+  padding-top: 6rem;
+  background: url('../img/note.jpg') center no-repeat;
+  background-size: cover;
+  /* #business-consulting-text-2{
+		margin-bottom: 3.6rem;
+	}
+		#business-consulting-text-3{
+			margin-bottom: 20rem;
+		} */
+}
+.note .outsourced-management,
+.note .business-consulting {
+  text-align: center;
+}
+.note .outsourced-management h2,
+.note .business-consulting h2 {
+  font-weight: 800;
+  padding-bottom: 2rem;
+}
+.note .outsourced-management p,
+.note .business-consulting p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.note .outsourced-management p {
+  margin-bottom: 2rem;
+}
+.note .business-consulting p {
+  margin-bottom: 2.2rem;
+}
+.note .redline-outsourced-management,
+.note .redline-business-consulting {
+  position: absolute;
+  background-color: #c82f32;
+  width: 10rem;
+  height: .1rem;
+  left: 50%;
+  margin-left: -5rem;
+  margin-top: -1rem;
+}
+.case-study {
+  margin-top: 3rem;
+  padding-top: 4rem;
+  background: url('../img/case-study.png') center no-repeat;
+  background-size: cover;
+}
+.case-study p {
+  margin-top: 2rem;
+}
+.key-lessons-include {
+  background: url('../img/key-lessons.jpg') center no-repeat;
+  background-size: cover;
+  margin-top: 3rem;
+  padding: 7rem 0;
+}
+.key-lessons-include h1 {
+  margin-bottom: 2rem;
+}
+.footer {
+  margin: 0;
+  width: 100%;
+}
+.footer .rights-reserved {
+  margin: 0;
+}

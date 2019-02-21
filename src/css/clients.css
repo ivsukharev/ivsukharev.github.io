@@ -13,25 +13,32 @@ body {
   font-family: 'Tw Cen MT', sans-serif;
   color: #1f1f1f;
 }
+.logo-text {
+  color: #333;
+}
 .main-block-clients {
   background: url('../img/clients-main-background.png') center no-repeat;
   background-size: cover;
 }
 .text-block-clients {
   text-align: center;
-}
-.text-block-clients p {
   font-size: 1.6rem;
   letter-spacing: .1rem;
-  margin-top: 35%;
   font-family: 'Century Gothic', sans-serif;
   color: #fff;
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .note {
-  height: 100vh;
-  margin-top: 4rem;
-  padding-top: 6rem;
-  background: url('../img/note.jpg') center no-repeat;
+  height: 120vh;
+  margin-top: 2rem;
+  padding-top: 12rem;
+  /* 	background: url('../img/note.jpg') center no-repeat;
+background-size: cover; */
+  background: url('../img/clients-lines.svg') center no-repeat;
   background-size: cover;
   /* #business-consulting-text-2{
 		margin-bottom: 3.6rem;
@@ -71,8 +78,8 @@ body {
   margin-top: -1rem;
 }
 .case-study {
-  margin-top: 3rem;
-  padding-top: 4rem;
+  margin-top: 2rem;
+  padding: 4rem 0rem;
   background: url('../img/case-study.png') center no-repeat;
   background-size: cover;
 }
@@ -80,13 +87,17 @@ body {
   margin-top: 2rem;
 }
 .key-lessons-include {
-  background: url('../img/key-lessons.jpg') center no-repeat;
+  background: url('../img/arrow.jpg') center no-repeat;
   background-size: cover;
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding: 7rem 0;
 }
 .key-lessons-include h1 {
   margin-bottom: 2rem;
+}
+.key-lessons-include p {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
 }
 .footer {
   margin: 0;
@@ -94,4 +105,83 @@ body {
 }
 .footer .rights-reserved {
   margin: 0;
+}
+@media (max-width: 991.5px) {
+  .note {
+    /* 	background: url('../img/note-mobile.jpg') center no-repeat;
+	background-size: cover; */
+    padding-top: 6rem;
+    height: 150vh;
+  }
+  .business-consulting {
+    margin-top: 4rem;
+  }
+  .case-study {
+    text-align: center;
+  }
+}
+@media (max-width: 991.5px) and (min-width: 768px) {
+  .logo-text {
+    margin-left: 4rem;
+  }
+}
+@media (max-width: 873px) and (min-width: 768px) {
+  .text-block-clients {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 767.5px) {
+  .note {
+    padding-top: 4rem;
+  }
+  .key-lessons-include {
+    height: 110vh;
+  }
+  .key-lessons-include p {
+    text-align: left;
+  }
+  .text-block-clients {
+    font-size: 1rem;
+    letter-spacing: .05rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 576px) {
+  .text-block-clients {
+    width: 80%;
+  }
+  .note {
+    padding-top: 2rem;
+  }
+  .business-consulting {
+    margin-top: 2rem;
+  }
+  .key-lessons-include {
+    padding-top: 4rem;
+  }
+  .key-lessons-include p {
+    text-align: center;
+  }
+  .note {
+    background: url('../img/path.svg') center no-repeat;
+    background-size: cover;
+    height: 180vh;
+  }
+}
+@media (max-height: 530px) {
+  .note {
+    height: 200vh;
+  }
+}
+@media (max-width: 768px) {
+  .key-lessons-include {
+    height: 140vh;
+  }
+}
+@media (max-width: 397px) {
+  .key-lessons-include {
+    height: 160vh;
+  }
+  .key-lessons-include p {
+    text-align: center;
+  }
 }

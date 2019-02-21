@@ -11,6 +11,7 @@
 		<link href="css/bootstrap.css" rel="stylesheet">
 
 		<!-- Custom styles for this template -->
+		<link rel="stylesheet" href="css/reset.min.css">
 		<link href="css/style.css" rel="stylesheet">
 		<link href="css/contacts.css" rel="stylesheet">
 	</head>
@@ -23,7 +24,7 @@
 	
 			<div class="row">
 	
-				<div class="col-lg-3 col-md-3">
+				<div class="col-lg-3 col-md-2">
 				<div class="logo">
 					<a href="index.html">
 
@@ -39,7 +40,7 @@
 			</div>
 	
 
-					<div class="col-lg-8 offset-lg-1 col-md-9 ">
+					<div class="col-lg-8 offset-lg-1 col-md-10 ">
 						<nav class="menu-for-desktop">
 					<ul>
 						<li>
@@ -63,10 +64,28 @@
 </div>
 
 							<div class="burger-menu" id="phone-menu">
+							
+							<div class="logo">
+								<a href="index.html">
+
+									<div class="logo-block">
+										<p class="logo-text">
+											management<br> services
+										</p>
+										<img src="img/logo.svg" alt="logo">
+									</div>
+
+								</a>
+							</div>
+			
 
 								<span class="burger-menu-button" id="burger-button">
-										<span class="burger-menu-lines"></span>
+										<div class="lines">
+											<span class="burger-menu-lines" id="burgerLines"></span>
+										</div>
 								</span>
+								
+
 
 									<nav class="burger-menu-navigation">
 
@@ -92,23 +111,30 @@
 
 
 			<div class="container">
+<!-- <svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="1090px" height="749px">
+<path fill-rule="evenodd"  opacity="0.2" fill="rgb(167, 167, 167)"
+ d="M1009.405,395.280 C1040.381,432.664 1059.000,480.657 1059.000,533.000 C1059.000,652.293 962.293,749.000 843.000,749.000 C753.075,749.000 675.996,694.043 643.489,615.888 C618.358,639.998 587.408,658.081 552.959,667.839 C533.175,706.520 492.930,733.000 446.500,733.000 C401.241,733.000 361.861,707.838 341.580,670.741 C306.191,696.076 262.842,711.000 216.000,711.000 C96.707,711.000 0.000,614.293 0.000,495.000 C0.000,422.921 35.314,359.099 89.575,319.861 C72.641,289.042 63.000,253.649 63.000,216.000 C63.000,96.707 159.707,0.000 279.000,0.000 C361.563,0.000 433.294,46.329 469.646,114.402 C487.925,71.824 530.227,42.000 579.500,42.000 C614.990,42.000 646.861,57.477 668.747,82.043 C681.702,83.832 694.291,86.765 706.407,90.742 C746.013,42.087 806.372,11.000 874.000,11.000 C993.293,11.000 1090.000,107.707 1090.000,227.000 C1090.000,295.021 1058.548,355.687 1009.405,395.280 Z"/>
+</svg> -->
 			<div class="contacts">
 				<h1>Contact us</h1>
 
-				<form action="">
+				<form action="mail.php" method="POST">
 
 					<div class="row">
 
 						<div class="col-md-4 offset-md-1">
 							<div class="form-group">
-								<input type="text" placeholder=" ">
+								<input type="text" name="user_name" placeholder=" " required >
 								<label for="">Name</label>
 							</div>
 						</div>
 
 						<div class="col-md-4 offset-md-2">
 								<div class="form-group">
-									<input type="text" placeholder=" ">
+									<input type="text" name="user_email" placeholder=" " id="mail" required >
 									<label for="">E-mail</label>
 								</div>
 							</div>
@@ -118,24 +144,17 @@
 					<div class="row">
 						<div class="col-md-10 offset-md-1">
 							<div class="form-group">
-									<input type="text" class="input-message" placeholder=" ">
+									<input type="text" class="input-message" name="user_message" placeholder=" " required>
 									<label for="">Message</label>
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-2 offset-md-5">
-							<button class="btn btn-contacts">Send</button>
+						<div class="col-md-2 col-sm-4 col-8 offset-md-5 offset-sm-4 offset-2">
+							<button type="submit" class="btn btn-contacts">Send</button>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-md-5 offset-md-1">
-							<p class="contacts-text">
-								Phone: 8(800) 555-35-35<br>
-								E-mail: redmanagement@mail.ru
-							</p>
-						</div>
-					</div>
+					
 				</form>
 			</div>
 			</div>
@@ -210,7 +229,7 @@
 	</div>
 
 		<!-- Jquery и главный js -->
-						<script src="js/main.js"></script>
+						<script src="js/burger-menu.js"></script>
 						<script src="js/jquery-3.3.1.js"></script>
 	</body>
 </html>

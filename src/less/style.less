@@ -148,20 +148,27 @@ nav ul li{
 	z-index: 99;
 }
 
+
 /* Burger menu */
 .burger-menu{
 	&-button{
 		position: absolute;
-		top: 2rem;
-		right: 2rem;
 		z-index: 30;
 		width: 3rem;
-		height: 3rem;
+	 height: 3rem;
+	 top: 5%;
+  left: 80%;
 		cursor: pointer;
 		&:hover{
 		opacity: .8;
 		} 
 		transition: all .4s;
+	}
+	.lines{
+			width: 3rem;
+		height: 3rem;
+		top: 0;
+		left: 0;
 	}
 	&-lines{
 		position: absolute;
@@ -177,10 +184,10 @@ nav ul li{
 				background-color: @main-color;
 				border-radius: .6rem;
 				}
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		&::before{
+ 		 		left: .5rem; 
+ 		 		top: 1.4rem;
+		transform: translate(50%, 250%);  
+		 		&::before{
 				top: -.6rem;
 		}
 			&::after{
@@ -188,24 +195,24 @@ nav ul li{
 		}
 	}
 	&-active{
-		.burger-menu-lines{
+		 .burger-menu-lines{
 				 		background-color: transparent;
-				&::before, &::after{
-					top: 0;
-				}
-				&::before{
-					transform: rotate(45deg);
-				}
-				&::after{
-					transform: rotate(135deg);
-				}
+			&::before, &::after{
+				top: 0;
+			}
+			&::before{
+				transform: rotate(45deg);
+			}
+			&::after{
+				transform: rotate(135deg);
+			}
 				&:hover{
 					opacity: .8;
 				} 
-		}
-		.burger-menu-button{
+		} 
+		 .burger-menu-button{
 			transition: all .5s;
-		}
+		} 
 		transition: all .8s;
 		left: 0;
 		.burger-menu-navigation{
@@ -215,12 +222,12 @@ nav ul li{
 	&-navigation{
 		text-align: center;
 		position: absolute;
-		padding-top: 3rem;
+		padding-top: 5rem;
 		z-index: 20;
 		display: flex;
 		flex-flow: column;
 		width: 100%;
-		height: 90vh;
+		height: 90vh;	
 		background-color: #303030;
 		overflow-y: none;
 		top: -120%;
@@ -271,10 +278,21 @@ nav ul li{
 			display: block;
 		}
 	}
+	.logo{
+		margin-top: 1rem;
+		margin-left: 5%;
+		p, img{
+			z-index: 100;
+		}
+	}
 }
 .burger-menu{
 	display: none;
 }
+
+
+
+
 
 /* Slider */
 #main-block{
@@ -284,73 +302,57 @@ nav ul li{
 .slide{
 	&r{
 		position: absolute;
-		width: 100%;
 		height: 100vh;
+		// width: 300vw;
 		overflow: hidden;
 		left: 0;
 		top: 0;
 		z-index: 1;
 	}
-	&-s{
+ 	 &-s{
+		position: absolute;
 		display: inline-block;
-	}
-	position: absolute;
-	left: 0;
-	top: 0;
+		height: 100vh;
+		overflow-x: hidden;
+		left: 0;
+		top: 0;
+		z-index: 1;
+	}  
 		display: inline-block;
-		width: 100%;
+		width: 100vw;
+		height: 100vh;
+		top: 0;
 	&-0{
 		background: url('../img/main-slide-block-image-1.jpg') center no-repeat;
 		background-size: cover;
-		height: 100vh;
-		z-index: 3;
+		left: 0;
+		z-index: 2;
+		opacity: 0;
 	}
 	&-1{
+		position: absolute;
 		background: url('../img/main-slide-block-image-2.jpg') center no-repeat;
 		background-size: cover;
-		height: 100vh;
-		z-index: 4;
-		right: -100%;
+		left: 100vw;
+		z-index: 2;
+		opacity: 0;
 	}
 	&-2{
+		position: absolute;
 		background: url('../img/main-slide-block-image-3.jpg') center no-repeat;
 		background-size: cover;
-		height: 100vh;
-		z-index: 5;
-		right: -200%;
+		left: 200vw;	
+		z-index: 2;
+		opacity: 0;
 	}
-	opacity: 0;
-	&-showing{
-		opacity: 1;
-		top: 0;
-		left: 0;
-		z-index: 6;	
-	}
+ 	&-showing{
+ 		left: 0;
+ 		opacity: 1;
+ 		z-index: 5;
+ 	} 
 }
-@keyframes slides{
-	0%{
-		opacity: .3;
-	}
-		100%{
-		opacity: 1;
-	}
-}
-@keyframes movenext{
-	0%{
-		transform: translateX(0);
-	}
-		100%{
-	transform: translateX(-100%)
-	}
-}
-@keyframes moveprev{
-	0%{
-		transform: translateX(0);
-	}
-		100%{
-	transform: translateX(100%)
-	}
-}
+
+
 .white-main-block{
 	padding: 1rem;
 	margin-top: 34vh;
@@ -379,7 +381,7 @@ nav ul li{
  .arrows-and-dots{
  	z-index: 10;
  	position: absolute;
- 	width: 100%;
+ 	width: 100vw;
  	transform: translateY(85%);
  }
   .arrow-circle{
@@ -404,14 +406,17 @@ nav ul li{
 		margin-left: .3rem;
 		margin-top: .3rem;
 }
+#arrow-circle-left{
+	margin-top: 0rem;
+}
 
 /* Right arrow */
-.wrap-2{
+ .wrap-2{
 	padding-top: .2rem;
 }
-#arrow-circle-right{
+/* #arrow-circle-right{
 	margin-top: -.5rem;
-}
+}  */
 #right-arrow{
 	display: inline-block;
 	width: 1rem;
@@ -421,7 +426,7 @@ nav ul li{
 	transform: rotate(45deg);
 		margin-right: .3rem;
 }
-.wrap{
+ .wrap{
 	display: table;
 	width: 100%;
 	height: 2rem;
@@ -430,6 +435,10 @@ nav ul li{
 	vertical-align: middle;
 	text-align: center;
 	}
+} 
+.arrrows-for-phone{
+	margin-top: 18%;
+	display: none;
 }
 /* Dots */
 .dots{
@@ -693,8 +702,11 @@ p.rights-reserved{
 
 
 
-@media(max-width:767px){
+@media(max-width:767.5px){
 .menu-for-desktop{
+	display: none;
+}
+.main-header{
 	display: none;
 }
 .burger-menu{
@@ -745,8 +757,14 @@ p.rights-reserved{
 		margin-top: .6rem;
 	}
 	#arrow-circle-right{
-		position: relative;
-		margin-top: -.5rem;
+		margin-top: -.2rem;
+		padding-top: .2rem;
+		}
+	#right-arrow{
+		 margin-top: -1rem;
+	}
+	.wrap-2{
+		margin-top: 0;
 	}
 	p{
 		text-align: center;
@@ -785,24 +803,59 @@ p.rights-reserved{
 	}
 }
 
- @media screen and (min-width: 320px) and (max-width : 576px){
+ @media screen and (min-width: 250px) and (max-width : 576px){
+ 	.logo-block{
+			img{
+				height: 4rem;
+				width: 6rem;
+		}
+		.logo-text{
+		font-size: .5rem;
+		margin-left: 4.2rem;
+		}
+	}
+
+.logo-in-footer-block{
+			img{
+				height: 4rem;
+				width: 6rem;
+		}
+		.logo-in-footer-text{
+		font-size: .5rem;
+		margin-left: 4.2rem;
+		}
+	}
+
+
 	.main-slide-subtittle, .step-tittle{
 		text-align: left;
 	}
 	.white-main-block{
+		h2{
+			text-align: center;
+		}
 	p.main-slide-subtittle{
 		font-size: 1rem;
 		line-height: 1.4rem;
+		text-align: center;
 		}
 }
-	.arrows{
-		display: none;
-		position: absolute;
-		margin-top: 10rem;
-	} 
-	.dots{
-		display: none;
-	}
+
+.arrows{
+	display: none;
+}
+.arrrows-for-phone{
+	display: block;
+}
+.dots{
+	display: block;
+}
+		.white-main-block{
+				background-color: rgba(250, 250, 250, .7);
+			box-shadow:  0rem 0rem 2rem rgb(255, 255, 255);
+			border-radius: 1rem;
+		}
+
 	.whyred-block{
 		text-align: center;
 	}
@@ -851,6 +904,41 @@ p.rights-reserved{
 	}
 } 
 
-/* @media screen and (max-width: 576px){
-	
-} */
+@media  screen and  (min-width: 250px) and (max-width : 576px) and (max-height: 640px){
+		
+	.burger-menu{
+		margin-bottom: 1rem;
+		&-navigation{
+			padding-top: 3rem;
+			height: 90vh;	
+			top: -130%;			
+			display: block;
+	}
+		&-link{
+			font-size: 1.6rem;
+			padding: .6rem;
+			display: block;
+			margin-bottom: -2rem;
+		}
+		&-white-line{
+			 	&-1, &-2, &-3{
+			 		margin-top: 1rem;
+			 	}
+		}
+	}
+		/* .credentials{
+			background: url('../img/arms.png') center no-repeat;
+			background-size: cover;
+			margin-top: 4rem;
+			h1{
+				margin-top: -4rem;
+			}
+		} */
+} 
+
+
+@media(max-width: 400px){
+	.arrrows-for-phone{
+		margin-top: 28%;
+	}
+}

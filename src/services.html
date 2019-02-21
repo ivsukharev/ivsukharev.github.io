@@ -11,6 +11,7 @@
 		<link href="css/bootstrap.css" rel="stylesheet">
 
 		<!-- Custom styles for this template -->
+		<link rel="stylesheet" href="css/reset.min.css">
 		<link href="css/style.css" rel="stylesheet">
 		<link href="css/services.css" rel="stylesheet">
 	</head>
@@ -23,7 +24,7 @@
 	
 			<div class="row">
 	
-				<div class="col-lg-3 col-md-3">
+				<div class="col-lg-3 col-md-2">
 				<div class="logo">
 					<a href="index.html">
 
@@ -39,7 +40,7 @@
 			</div>
 	
 
-					<div class="col-lg-8 offset-lg-1 col-md-9 ">
+					<div class="col-lg-8 offset-lg-1 col-md-10 ">
 						<nav class="menu-for-desktop">
 					<ul>
 						<li>
@@ -63,14 +64,32 @@
 </div>
 
 							<div class="burger-menu" id="phone-menu">
+							
+							<div class="logo">
+								<a href="index.html">
+
+									<div class="logo-block">
+										<p class="logo-text">
+											management<br> services
+										</p>
+										<img src="img/logo.svg" alt="logo">
+									</div>
+
+								</a>
+							</div>
+			
 
 								<span class="burger-menu-button" id="burger-button">
-										<span class="burger-menu-lines"></span>
+										<div class="lines">
+											<span class="burger-menu-lines" id="burgerLines"></span>
+										</div>
 								</span>
+								
+
 
 									<nav class="burger-menu-navigation">
 
-												<a href="home.html" class="burger-menu-link">Home</a>
+												<a href="index.html" class="burger-menu-link">Home</a>
 													<span class="burger-menu-white-line-1"></span>
 											
 
@@ -89,6 +108,7 @@
 									<div class="burger-menu-overlay" id="overlay"></div>
 					</div>
 
+					
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-7 col-md-8 offset-lg-1 offset-md-1">
@@ -96,11 +116,11 @@
 							<div class="main-services-text-block">
 								<h1>Outsourced management<span class="red-sign">.</span></h1>
 								<p>
-									Major business growth in this region typically requires local control and day<span class="red-sign">-</span>to<span class="red-sign">-</span>day driving of the business<span class="red-sign">.</span> Red<span class="red-sign">’</span>s outsourced management model provides a dynamic and efficient alternative to running your own operation<span class="red-sign">.</span>
+									Major business growth in this region typically requires local control and day<span class="red-sign">-</span>to<span class="red-sign">-</span>day driving of the business<span class="red-sign">.</span> Red<span class="red-sign">`</span>s outsourced management model provides a dynamic and efficient alternative to running your own operation<span class="red-sign">.</span>
 								</p>
 								<span class="main-redline-services"></span>
 								<p>
-									We also provide project management support<span class="red-sign">.</span> In Russia<span class="red-sign">’</span>s high<span class="red-sign">-</span>grothw environment<span class="red-sign">,</span> companies are frequently faced with shortage of resources relative to the oppurtunities identified<span class="red-sign">.</span> Red offers dedicated project management to bring focus to a key initiative<span class="red-sign">.</span>
+									We also provide project management support<span class="red-sign">.</span> In Russia<span class="red-sign">`</span>s high<span class="red-sign">-</span>grothw environment<span class="red-sign">,</span> companies are frequently faced with shortage of resources relative to the oppurtunities identified<span class="red-sign">.</span> Red offers dedicated project management to bring focus to a key initiative<span class="red-sign">.</span>
 								</p>
 							</div>
 						</div>
@@ -118,7 +138,7 @@
 							<img src="img/icon-less-money.png" alt="">
 							<p>
 								Lower cost throught 
-								shared office & support infrastructure
+								shared <br>office & support infrastructure
 							</p>
 						</div>
 						<div class="features-block">
@@ -159,7 +179,8 @@
 
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-6 col-md-10 offset-lg-3 offset-md-1">
+						<div class="col-lg-8 col-md-10 col-12 offset-lg-2
+						offset-md-1">
 							<p>
 					Russia is a buoyant market but the cost of mistaken strategy is typicallly high<span class="red-sign">.</span> We provide strategic and operational advice to clients <span class="red-sign">-</span> an upfront investment that substantially increases the likelihood of success<span class="red-sign">.</span>
 				</p>
@@ -173,7 +194,7 @@
 
 					<span class="red-sign">3.</span> Opportunity evaulation<br>
 
-					<span class="red-sign">4.</span>M<span class="red-sign">&</span>A analysis<br>
+					<span class="red-sign">4. </span>M<span class="red-sign">&</span>A analysis<br>
 
 					<span class="red-sign">5.</span> Business planning
 				</p>
@@ -188,7 +209,7 @@
 					
 
 			<div class="row">
-				<div class="col-lg-3 col-md-5 col-sm-6 offset-lg-3 offset-md-1 ">
+				<div class="col-lg-4 col-md-5 col-sm-4 col-6 offset-lg-2 offset-md-1 offset-sm-1 offset-0">
 
 					<div class="methods">
 						<h2>Methods</h2>
@@ -205,7 +226,7 @@
 
 				</div>
 
-				<div class="col-lg-4 col-md-5 col-sm-6 ">
+				<div class="col-lg-4 col-md-5 col-sm-6 col-6 ">
 					
 					<div class="issues">
 						<h2>Issues</h2>
@@ -293,7 +314,7 @@
 					
 					<!-- Jquery и главный js -->
 					<script src="js/jquery-3.3.1.js"></script>
-						<script src="js/main.js"></script>
+						<script src="js/burger-menu.js"></script>
 					<!-- Подключаем стили slick slider -->
 							<link rel="stylesheet" href="slick/slick.css">
 							<link rel="stylesheet" href="slick/slick-theme.css">
@@ -317,21 +338,26 @@
 							           slidesToShow: 4,
 							           slidesToScroll: 4,
 							           infinite: true,
-							           dots: true
 							         }
 							       },
 							       {
 							         breakpoint: 769,
 							         settings: {
-							           slidesToShow: 2,
-							           slidesToScroll: 2
+							           slidesToShow: 1,
+							           slidesToScroll: 1,
+							           autoplay: true,
+							           autoplaySpeed: 1000,
+							           infinite: true,
 							         }
 							       },
 							       {
 							         breakpoint: 480,
 							         settings: {
 							           slidesToShow: 1,
-							           slidesToScroll: 1
+							           slidesToScroll: 1,
+							           autoplay: true,
+							           autoplaySpeed: 1000,
+							           infinite: true,
 							         }
 							       }
 							       // You can unslick at a given breakpoint now by adding:

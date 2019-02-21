@@ -1,0 +1,58 @@
+@dots: #767676;
+body {
+  height: 100vh;
+  margin: 0;
+  background: url('../img/thank-you.jpg') center no-repeat;
+  background-size: cover;
+}
+.thank-you-text{
+margin-top: 6rem;
+}
+h1,h2{
+	text-align: left;
+}
+h1{
+	font-size: 5rem;
+	letter-spacing: .8rem;
+	margin-bottom: 2rem;
+}
+h2{
+	color: @dots;
+	letter-spacing: .15rem;
+}
+
+@media(max-width:992px){
+	h2{
+		font-size: 1.4rem;
+	}
+}
+
+ @media(max-width:768px){
+	h1{
+		font-size: 4rem;
+	}
+	h2{
+		font-size: 1.2rem;
+	}
+} 
+
+
+@media screen and (min-width: 376px) and (max-width : 576px){
+	h1{
+		font-size: 3rem;
+		}
+		h2{
+			font-size: 1rem;
+			letter-spacing: .1rem;
+		}
+	}
+
+	@media screen and (min-width: 320px) and (max-width : 375px){
+			h1{
+		font-size: 2.4rem;
+		}
+		h2{
+			font-size: .8rem;
+			letter-spacing: .1rem;
+		}
+	}

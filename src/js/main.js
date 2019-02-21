@@ -1,140 +1,125 @@
-let mainBlock = document.getElementById('main-block');
+let slider = document.getElementById('sl');
 
-let dot1 = document.getElementById('dot0');
-let dot2 = document.getElementById('dot1');
-let dot3 = document.getElementById('dot2');
+let dot0 = document.getElementById('dot0');
+let dot1 = document.getElementById('dot1');
+let dot2 = document.getElementById('dot2');
 let previous = document.getElementById('arrow-circle-left');
 let next = document.getElementById('arrow-circle-right');
+let p = document.getElementById('left-phone-arrow');
+let n = document.getElementById('right-phone-arrow');
 
 /*let header = document.getElementsByClassName('navigation');*/
 var slides = document.getElementsByClassName('slide');
 var dots = document.getElementsByClassName('dot');
 var currentSlide = 0;
 
+
+/*function showSlide(){
+  let i;
+   for (i = 0; i < slides.length; i++) {
+        dots[i].className = 'dot';
+    }
+  slides[currentSlide].classList.remove('slide-showig');
+  slides[currentSlide].style.opacity = '0';
+  slides[currentSlide].style.transition = 'all 1s';
+
+ currentSlide = (currentSlide+1)%slides.length;
+ slides[currentSlide].classList.add('slide-showing');
+  dots[currentSlide].className += "dot-active";
+}*/
+function deleteActiveDots(){
+   let i;
+  for (i = 0; i < slides.length; i++) {
+        dots[i].className = 'dot';
+    }
+}
+
+function deleteActiveSlides(){
+  let i;
+   for (i = 0; i < slides.length; i++) {
+        slides[i].classList.remove('slide-showing');
+    } 
+}
+
+
 function nextSlide() {
- goToSlide(currentSlide+1);
-  /*slides[currentSlide].style.animation = 'movenext';
-  slides[currentSlide].style.animationDuration = '.6s';*/
-}
+  deleteActiveDots();
+  deleteActiveSlides();
+    /*slides[currentSlide].style.display = 'none';*/
+    /*slides[currentSlide].classList.remove('slide-showing');*/
+      if(currentSlide == 2 ) currentSlide = 0;
+      else    currentSlide++;
 
-function previousSlide() {
- goToSlide(currentSlide-1);
- /* slides[currentSlide].style.animation = 'moveprev';
-  slides[currentSlide].style.animationDuration = '.6s';*/
+    dots[currentSlide].classList.add('dot-active');
+    slides[currentSlide].classList.add('slide-showing')
+   slides[currentSlide].style.transition = 'all .6s';
 }
+ 
 
-dot1.onclick = function(){
-  slides[currentSlide].classList.remove('slide-showing');
-  slides[currentSlide].style.animation = 'none';
-  dot2.classList.remove('dot-active');
-  dot3.classList.remove('dot-active');
-  dot1.classList.add('dot-active');
-  currentSlide = 0; 
-    slides[currentSlide].classList.add('slide-'+currentSlide);
-    slides[currentSlide].classList.add('slide-showing');
-    slides[currentSlide].style.animation = 'slides';
-    slides[currentSlide].style.animationDuration = '1s';
-    /*autoplay(0);*/
+ function previousSlide() {
+  deleteActiveDots();
+  deleteActiveSlides();
+    /*slides[currentSlide].style.display = 'none';*/
+      if(currentSlide == 0 ) currentSlide = 2;
+      else    currentSlide--;
+
+    dots[currentSlide].classList.add('dot-active');
+    slides[currentSlide].classList.add('slide-showing')
+   slides[currentSlide].style.transition = 'all .6s';
 }
-
-dot2.onclick = function(){
-  slides[currentSlide].classList.remove('slide-showing');
-  slides[currentSlide].style.animation = 'none';
-  dot1.classList.remove('dot-active');
-  dot3.classList.remove('dot-active');
-  dot2.classList.add('dot-active');
-  currentSlide = 1; 
-    slides[currentSlide].classList.add('slide-'+currentSlide);
-    slides[currentSlide].classList.add('slide-showing');
-    slides[currentSlide].style.animation = 'slides';
-    slides[currentSlide].style.animationDuration = '1s';
-    /*autoplay(0);*/
-}
-
-dot3.onclick = function(){
-  slides[currentSlide].classList.remove('slide-showing');
-      slides[currentSlide].style.animation = 'none';
-  dot2.classList.remove('dot-active');
-  dot1.classList.remove('dot-active');
-  dot3.classList.add('dot-active');
-  currentSlide = 2; 
-    slides[currentSlide].classList.add('slide-'+currentSlide);
-    slides[currentSlide].classList.add('slide-showing');
-    slides[currentSlide].style.animation = 'slides';
-    slides[currentSlide].style.animationDuration = '1s';
-    /*autoplay(0);*/
+ 
+/*function previousSlide() {
+    goToSlide(currentSlide-1);
 }
  
 function goToSlide(n) {
-  dot1.classList.remove('dot-active');
-  dot2.classList.remove('dot-active');
-  dot3.classList.remove('dot-active');
-    slides[currentSlide].style.animation = 'none';
-    slides[currentSlide].className = 'slide'; 
+    slides[currentSlide].className = 'slide';
     currentSlide = (n+slides.length)%slides.length;
     slides[currentSlide].classList.add('slide-'+currentSlide);
-    slides[currentSlide].classList.add('slide-showing');
-    slides[currentSlide].style.animation = 'slides';
-    slides[currentSlide].style.animationDuration = '1s';
-    if(currentSlide == 0){
-       dot1.classList.add('dot-active');
-    } else if(currentSlide == 1){
-       dot2.classList.add('dot-active');
-    } else if(currentSlide == 2){
-       dot3.classList.add('dot-active');
-    }
-/*    setInterval(nextSlide,9000);*/
-   
+    slides[currentSlide].className = 'slide-showing';
+}
+*/
+function dotsOnclick(i){
+  deleteActiveSlides();
+  deleteActiveDots();
+  slides[i].classList.add('slide-showing');
+  slides[i].style.transition = 'all .6s';
+}
+
+dot0.onclick = function(){
+  dotsOnclick(0); 
+  dot0.classList.add('dot-active');
+}
+dot1.onclick = function(){
+  dotsOnclick(1);
+  dot1.classList.add('dot-active');
+}
+dot2.onclick = function(){
+  dotsOnclick(2);
+  dot2.classList.add('dot-active');
 }
 
 
 next.onclick = function() {
     nextSlide();
-    /*autoplay(9000);*/
 };
+
+
 previous.onclick = function() {
     previousSlide();
-    /*autoplay(9000);*/
 };
 
-/*
-function autoplay(n=9000) {
-  var active = document.getElementsByClassName('slide-showing');
-  currentSlide+=1;
-  if ( currentSlide > (slides.length-1) ) currentSlide = 0;
-  
-  setInterval(nextSlide,n);
+n.onclick = function() {
+    nextSlide();
+};
 
-}
-*/
 
-  let menu = document.getElementById('phone-menu');
-  let button = document.getElementById('burger-button');
-  let overlay = document.getElementById('overlay');
-  let btnClick = 1;
+p.onclick = function() {
+    previousSlide();
+};
 
-  button.onclick = function(){
-/*  if (btnClick%2 == 1){
-    menu.classList.add('burger-menu-active');
-  } else{
-    menu.classList.remove('burger-menu-active');
-  }
-  btnClick++;
-  console.log(btnClick);*/
-  if(menu.className === "burger-menu"){
-    menu.className += " burger-menu-active";
-  }else{
-     menu.className = "burger-menu";
-  }
-}
-/*button.onmouseup = function(){
-   if(menu.className === "burger-menu"){
-    menu.className += " burger-menu-active";
-  }else{
-     menu.className = "burger-menu";
-  }
-}*/
 
-overlay.onclick = function(){
-    menu.classList.remove('burger-menu-active');
-}
+
+
+
+

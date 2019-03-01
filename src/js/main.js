@@ -7,6 +7,7 @@ let previous = document.getElementById('arrow-circle-left');
 let next = document.getElementById('arrow-circle-right');
 let p = document.getElementById('left-phone-arrow');
 let n = document.getElementById('right-phone-arrow');
+let credentials = document.getElementsByClassName('credentials-image')[0];
 
 /*let header = document.getElementsByClassName('navigation');*/
 var slides = document.getElementsByClassName('slide');
@@ -14,19 +15,7 @@ var dots = document.getElementsByClassName('dot');
 var currentSlide = 0;
 
 
-/*function showSlide(){
-  let i;
-   for (i = 0; i < slides.length; i++) {
-        dots[i].className = 'dot';
-    }
-  slides[currentSlide].classList.remove('slide-showig');
-  slides[currentSlide].style.opacity = '0';
-  slides[currentSlide].style.transition = 'all 1s';
 
- currentSlide = (currentSlide+1)%slides.length;
- slides[currentSlide].classList.add('slide-showing');
-  dots[currentSlide].className += "dot-active";
-}*/
 function deleteActiveDots(){
    let i;
   for (i = 0; i < slides.length; i++) {
@@ -68,17 +57,7 @@ function nextSlide() {
    slides[currentSlide].style.transition = 'all .6s';
 }
  
-/*function previousSlide() {
-    goToSlide(currentSlide-1);
-}
- 
-function goToSlide(n) {
-    slides[currentSlide].className = 'slide';
-    currentSlide = (n+slides.length)%slides.length;
-    slides[currentSlide].classList.add('slide-'+currentSlide);
-    slides[currentSlide].className = 'slide-showing';
-}
-*/
+
 function dotsOnclick(i){
   deleteActiveSlides();
   deleteActiveDots();
@@ -119,7 +98,31 @@ p.onclick = function() {
 };
 
 
+if(window.matchMedia('(max-width: 577px)').matches)
+{
+  credentials.innerHTML = '<img src="img/arms.png" class="arms"><div class="circle circle-first"></div><div class="circle circle-second"></div><div class="circle circle-third"></div><div class="circle circle-fourth"></div><div class="circle circle-fifth"></div>';
+  document.getElementsByClassName('credentials')[0].style.height = '160vh';
+  credentials.style.marginTop = '2rem';
+  document.getElementsByClassName('credentials-text-second')[0].style.position = 'absolute';
+  document.getElementsByClassName('credentials-text-second')[0].style.marginTop = '36rem';
+} 
 
+/*window.onscroll = function(e){
+  let top = e.clientY;
+  parallax(top);
+}
 
-
-
+function parallax(e){
+  document.getElementsByClassName('circle-first')[0].style.transform = 'top(' + (e.clientY/8) + 'px)';
+  document.getElementsByClassName('circle-second')[0].style.transform = 'top(' + (e.clientY/8) + 'px)';
+  document.getElementsByClassName('circle-third')[0].style.transform = 'top(' + (e.clientY/8) + 'px)';
+  document.getElementsByClassName('circle-fourth')[0].style.transform = 'top(' + (e.clientY/8) + 'px)';
+  document.getElementsByClassName('circle-fifth')[0].style.transform = 'top(' + (e.clientY/8) + 'px)';
+}
+*/
+/*function fc(){
+  var c1 = document.getElementsByClassName('circle-first')[0];
+  let e = c1.offsetTop;
+  console.log(e);
+}
+*/

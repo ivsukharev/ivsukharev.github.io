@@ -405,6 +405,9 @@ nav ul li a:hover {
   margin-top: 18%;
   display: none;
 }
+.arrrows-for-phone svg:hover .a {
+  stroke: #db6466;
+}
 /* Dots */
 .dots {
   text-align: center;
@@ -516,6 +519,7 @@ h1.whyred {
 }
 .credentials-image {
   margin-top: 6rem;
+  text-align: center;
 }
 .redline-credentials {
   position: absolute;
@@ -812,11 +816,11 @@ p.rights-reserved {
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 4rem;
-    background: url('../img/credentials-opacity.png') center no-repeat;
-    background-size: cover;
+    /* 	background: url('../img/credentials-opacity.png') center no-repeat;
+	background-size: cover; */
   }
   .credentials img {
-    display: none;
+    /* display: none; */
   }
   .credentials .credentials-text {
     margin-bottom: 2rem;
@@ -864,4 +868,47 @@ p.rights-reserved {
   .arrrows-for-phone {
     margin-top: 28%;
   }
+}
+@media (max-width: 318px) {
+  .arrrows-for-phone {
+    margin-top: 34%;
+  }
+}
+/* Media Js */
+.circle {
+  /* 	&-first, &-second, &-third, &-fourth, &-fifth */
+  border-radius: 50%;
+  background-color: #E46C73;
+  opacity: .92;
+  position: absolute;
+}
+.circle-first {
+  top: 0;
+  left: 20px;
+  width: 88px;
+  height: 88px;
+}
+.circle-second {
+  top: 10px;
+  right: -14px;
+  width: 123px;
+  height: 123px;
+}
+.circle-third {
+  bottom: 20px;
+  right: 32px;
+  height: 62px;
+  width: 62px;
+}
+.circle-fourth {
+  bottom: -24px;
+  left: 100px;
+  width: 93px;
+  height: 93px;
+}
+.circle-fifth {
+  bottom: 0;
+  left: 74px;
+  width: 54px;
+  height: 54px;
 }

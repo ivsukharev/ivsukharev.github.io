@@ -20,20 +20,3 @@
 overlay.onclick = function(){
     menu.classList.remove('burger-menu-active');
 }
-
-
-
-
- /* console.log(btnClick);
-  if(menu.className === "burger-menu"){
-    menu.className += " burger-menu-active";
-  }else{
-     menu.className = "burger-menu";
-  }*/
-/*button.onmouseup = function(){
-   if(menu.className === "burger-menu"){
-    menu.className += " burger-menu-active";
-  }else{
-     menu.className = "burger-menu";
-  }
-}*/
